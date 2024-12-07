@@ -1,25 +1,54 @@
-# Student-Management-System
+# Student Management System in JAVA
+This is a simple Student Management System project implemented using Java and MySQL. It allows users to perform CRUD (Create, Read, Update, Delete) operations on student data such as ID, first name, last name, major, phone number, GPA, and date of birth.
 
-The Student Grade Calculator is a straightforward Java program designed to compute and display a student's performance in multiple subjects by calculating their total marks, average percentage, and assigning a grade based on predefined criteria. This program is interactive, requiring the user to input the number of subjects and their respective marks. Through its systematic approach, it aggregates the marks, calculates an average percentage, and uses conditional logic to determine a corresponding grade, which is then presented to the user along with the total and average scores.
+[Step by Step guide to design and develop this application](https://iq.opengenus.org/student-management-system-in-java/)
 
-The Student Grade Calculator project appears to be a Java-based program designed to compute a student's grades based on their marks in multiple subjects. Below is a summary of its key features:
+# Features
+* Add a new student
+* View student data
+* Update student data
+* search for a student
+* sort students by major, lastname and firstname.
 
-Key Functionalities:
-Input for Subjects and Marks:
+# Requirements
+* Java 8 or higher.
+* MySQL Server.
 
-The program prompts the user to input the number of subjects.
-It then collects marks for each subject in a loop.
-Calculations:
+# Installation
+1. Clone the repository
+```bash
+git clone https://github.com/your_username/student-management-system.git
+```
+2. Create a new MySQL database and import the student_data.sql file to 
+3. create the required table and sample data.
+4. Update the MySQL database connection details in the dbConnect class.
+5. Build and run the project using a Java IDE or command-line tool.
+6. To import *student_data.sql* into your mysql database.
+    * **Type**: ```mysql -u username -p database_name < file.sql```
+    * The **username** refers to your MySQL username.
+    * **database_name** refers to the database you want to import.
+    * **file.sql** is your file name. (student_data.sql in our case.)
+    * If you've assigned a password, type it now and press Enter.
 
-Computes the total marks obtained across all subjects.
-Calculates the average percentage by dividing the total marks by the number of subjects.
-Grade Assignment:
+# Usage
+* Launch the application
+* Select the desired operation from the main menu
+* Follow the prompts to enter or update student data
 
-The program determines a grade based on the calculated average percentage. (The details of the grade logic appear further down in the code.)
-Output:
+# Database Columns
+The database table used in this project has the following columns:
 
-Displays the total marks, average percentage, and the grade to the user.
-Code Structure:
-The program uses a Scanner object for user input, making it interactive.
-Employs basic arithmetic operations and control flow (e.g., loops and conditional statements) for calculations.
-Outputs results directly to the console.
+* Student_ID: The unique identifier for each student.  
+* first_name: The first name of the student.  
+* last_name: The last name of the student.  
+* major: The major that the student is studying.  
+* Phone: The phone number of the student.  
+* GPA: The grade point average of the student.  
+* DOB: The date of birth of the student.
+
+# Future Enhancements
+* Fee tracking
+* Attendance management
+
+
+
